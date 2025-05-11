@@ -8,3 +8,5 @@ from app.crud.user import (  # noqa
     update_user,
     authenticate_user,
 )
+
+from app.crud import exchange_credentials
