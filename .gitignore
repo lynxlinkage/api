@@ -68,3 +68,6 @@ logs/
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Test
+*.http
