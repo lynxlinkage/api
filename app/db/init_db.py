@@ -1,6 +1,10 @@
 import logging
 from sqlalchemy.orm import Session
 
+# Import all models to ensure they're registered with SQLAlchemy
+from app.models.user import User
+from app.models.exchange_credential import ExchangeCredentials
+
 from app import crud
 from app.schemas.user import UserCreate
 from app.db.session import Base, engine, SessionLocal

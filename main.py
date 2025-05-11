@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+# Import all models to ensure they're registered with SQLAlchemy
+from app.models.user import User
+from app.models.exchange_credential import ExchangeCredentials
+
 from app.api.routes import api_router
 from app.core.config import settings
 
